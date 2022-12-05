@@ -40,12 +40,16 @@
   <body>
     <!-- Rating card -->
     <article class="card rating__card">
+      <div class="star__icon">
+        <img src="/images/icon-star.svg" alt="Icon of a little star" />
+      </div>
+
       <h1 class="card__title">How did we do?</h1>
       <p class="main__text">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <ul>
+      <ul class="rating__list">
         <li class="rating__btn">1</li>
         <li class="rating__btn">2</li>
         <li class="rating__btn">3</li>
@@ -56,16 +60,18 @@
     </article>
 
     <!-- Thank you card -->
-    <article class="card thank__card"></article>
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
+    <article class="card thank__card hidden">
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="Picture of a credit card flying through a mobile device"
+      />
+      <p class="rating__choice">You selected out 1 of 5</p>
+      <h1 class="thank__title">Thank you!</h1>
+      <p class="main__thank-text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </article>
 
     <footer>
       <div class="attribution">
