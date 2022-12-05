@@ -138,6 +138,7 @@ footer {
   width: 2.5rem;
   height: 2.5rem;
   padding: 0rem;
+  border: none;
   border-radius: 50%;
   background-color: var(--clr-neutral-500);
   color: var(--clr-neutral-200);
@@ -148,13 +149,14 @@ footer {
   transition: 0.3s;
 }
 
-.rating__btn:is(:hover, :focus) {
+.rating__btn:hover {
   cursor: pointer;
-  background-color: var(--clr-neutral-200);
+  background-color: var(--clr-primary-400);
   color: var(--clr-neutral-100);
 }
-.rating__btn:active {
-  background-color: var(--clr-primary-400);
+
+.rating__btn:focus {
+  background-color: var(--clr-neutral-200);
   color: var(--clr-neutral-100);
 }
 
@@ -164,9 +166,10 @@ footer {
   color: var(--clr-neutral-100);
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
   line-height: 2;
   padding: 0.3rem 0;
+  border: none;
   border-radius: 500px;
   font-weight: var(--fw-regular);
   transition: 0.3s;

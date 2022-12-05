@@ -24,6 +24,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- JavaScrip -->
+
+    <script src="app.js" defer></script>
+
     <title>Frontend Mentor | Interactive rating component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -31,6 +35,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: grey;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -50,13 +55,13 @@
         appreciated to help us improve our offering!
       </p>
       <ul class="rating__list">
-        <li class="rating__btn">1</li>
-        <li class="rating__btn">2</li>
-        <li class="rating__btn">3</li>
-        <li class="rating__btn">4</li>
-        <li class="rating__btn">5</li>
+        <li><button class="rating__btn">1</button></li>
+        <li><button class="rating__btn">2</button></li>
+        <li><button class="rating__btn">3</button></li>
+        <li><button class="rating__btn">4</button></li>
+        <li><button class="rating__btn">5</button></li>
       </ul>
-      <div class="submit__btn">Submit</div>
+      <button class="submit__btn" id="submit">Submit</button>
     </article>
 
     <!-- Thank you card -->
@@ -65,7 +70,9 @@
         src="images/illustration-thank-you.svg"
         alt="Picture of a credit card flying through a mobile device"
       />
-      <p class="rating__choice">You selected out 1 of 5</p>
+      <p class="rating__choice">
+        You selected out <span id="rate">5</span> of 5
+      </p>
       <h1 class="thank__title">Thank you!</h1>
       <p class="main__thank-text">
         We appreciate you taking the time to give a rating. If you ever need
